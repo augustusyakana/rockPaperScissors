@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel&family=Raleway&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: rgb(59, 43, 43);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 100px;
+    font-family: 'Cinzel', serif;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Alex Brush', cursive;
+}
