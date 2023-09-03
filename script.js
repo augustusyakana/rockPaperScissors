@@ -6,7 +6,7 @@ const buttons = document.querySelectorAll('input');
 
 
 function getComputerChoice() {
-    let choices = ["rock", "paper", "scissors"];
+    let choices = ["ku", "pa", "tok"];
     return choices[(Math.floor(Math.random() * choices.length))];
 }
 
@@ -25,45 +25,45 @@ function playRound(playerSelection) {
     let gameOver = '';
 
     // when the player wins the round
-    if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
-        (playerSelection == 'scissors' && computerSelection == 'paper') ||
-        (playerSelection == 'paper' && computerSelection == 'rock')) {
+    if ((playerSelection == 'ku' && computerSelection == 'tok') ||
+        (playerSelection == 'tok' && computerSelection == 'pa') ||
+        (playerSelection == 'pa' && computerSelection == 'ku')) {
         playerScore += 1;
 
-        result = `You won this round! ${playerSelection} beats ${computerSelection}`;
-        playerScoreResults = `Player Score: ${playerScore}`;
-        computerScoreResults = `Computer Score: ${computerScore}`;
-        drawsResult = `Draws: ${draws}`;
+        result = `Ke kana round mehkin. ${playerSelection} kin kaluhsih ${computerSelection}`;
+        playerScoreResults = `Ahmw Skohr: ${playerScore}`;
+        computerScoreResults = `Ahi Skohr: ${computerScore}`;
+        drawsResult = `Teng: ${draws}`;
 
         if (playerScore == 5) {
-            playerScoreResults = `Player Score: ${playerScore}`;
-            computerScoreResults = `Computer Score: ${computerScore}`;
-            drawsResult = `Draws: ${draws}`;
+            playerScoreResults = `Ahmw Skohr: ${playerScore}`;
+            computerScoreResults = `AhiSkohr: ${computerScore}`;
+            drawsResult = `Teng: ${draws}`;
 
-            gameOver = `I'll get you next time! <br>Refresh the page to play again`;
+            gameOver = `ESEH! Ke rorok kaluhsihie? <br>Refresh Page en kitahn kamehlel! <br>Kedeh Saloh!`;
             disableButtons();
         }
 
     } else if (playerSelection == computerSelection) {
         draws += 1;
-        result = `Draw! You both chose ${playerSelection}`;
-        playerScoreResults = `Player Score: ${playerScore}`;
-        computerScoreResults = `Computer Score: ${computerScore}`;
-        drawsResult = `Draws: ${draws}`;
+        result = `Kita TENG! Pwe kita koaros pilada ${playerSelection}`;
+        playerScoreResults = `Ahmw Skohr: ${playerScore}`;
+        computerScoreResults = `Ahi Skohr: ${computerScore}`;
+        drawsResult = `Teng: ${draws}`;
 
     } else {
         computerScore += 1;
-        result = `You lost this round! ${computerSelection} beats ${playerSelection}`;
-        playerScoreResults = `Player Score: ${playerScore}`;
-        computerScoreResults = `Computer Score: ${computerScore}`;
-        drawsResult = `Draws: ${draws}`;
+        result = `HA! ${computerSelection} kin kaluhsih ${playerSelection}`;
+        playerScoreResults = `Ahmw Skohr: ${playerScore}`;
+        computerScoreResults = `Ahi Skohr: ${computerScore}`;
+        drawsResult = `Teng: ${draws}`;
 
         if (computerScore == 5) {
 
-            playerScoreResults = `Player Score: ${playerScore}`;
-            computerScoreResults = `Computer Score: ${computerScore}`;
-            drawsResult = `Draws: ${draws}`;
-            gameOver = `Loser! <br>Refresh the page to play again!`
+            playerScoreResults = `Ahmw Skohr: ${playerScore}`;
+            computerScoreResults = `Ahi Skohr: ${computerScore}`;
+            drawsResult = `Teng: ${draws}`;
+            gameOver = `Lesila pwe ke LUHS! HAHA <br>Kohla practice pwe ke samai! <br>Ma ke ngihtehte ah ke refresh kita pilehu!`
             disableButtons();
 
         }
