@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <h3>Open DOM console to play the game</h3>
-    <p>By: Augustus Yuki Yakana</p>
+    <div class="title">
+        <h1>Rock . Paper . Scissors</h1>
+        <p id="sub">You'll be playing against your computer. <br>First Player to reach 5 points wins the game.</p>
+    </div>
+    
+    <div id="buttons">
+        <p>Select your weapon</p>
+        <input type="button" value="ROCK">
+        <input type="button" value="PAPER">
+        <input type="button" value="SCISSORS">
+    </div>
+    <div id="roundResults">
+        <p id="result"></p>
+        <p id="playerScore"></p>
+        <p id="computerScore"></p>
+        <p id="draws"></p>
+        <p id="gameOver"></p>
+    </div>
+   
 
     <!-- <button class="button">CLICK TO START!</button> -->
 </body>

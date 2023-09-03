@@ -20,5 +20,50 @@ h3 {
 }
 
 p {
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Cinzel', serif;
+}
+
+#sub {
+    font-size: 15px;
+}
+
+#roundResults {
+    background-color: black;
+    box-shadow: 5px 5px 10px black;
+
+    border: 2px solid burlywood;
+    min-height: 100px;
+    width: 600px;
+
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+input {
+    color: black;
+    border: 2px solid black;
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(209, 209, 248);
+
+    box-shadow: 5px 5px 10px black;
+}
+
+input:hover {
+    box-shadow: 5px 5px 10px rgb(22, 21, 21);
+}
+
+#result {
+    color: rgb(131, 131, 241);
+}
+
+#gameOver {
+    color: rgb(245, 99, 99);
+}
+
+#buttons {
+    margin-top: 50px;
 }
