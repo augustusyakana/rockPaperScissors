@@ -10,7 +10,6 @@ function getComputerChoice() {
     return choices[(Math.floor(Math.random() * choices.length))];
 }
 
-// add code to disable buttons when score reaches 5
 function disableButtons() {
     buttons.forEach(elem => {
         elem.disabled = true;
